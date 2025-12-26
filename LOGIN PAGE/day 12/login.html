@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>login</h1>
+            <form action="" id="loginForm">
+                <div class="input">
+                    <input type="email" id="email" placeholder="Enter Your email">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="input">
+                    <input type="password" id="password" placeholder="Enter Your password">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="button">
+                    <button type="submit">login</button>
+                </div>
+                <p>i have new account<a href="index.html">Sign up</a></p>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- <script>
+
+        const form = document.getElementById("loginForm");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault()
+
+
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+
+
+
+            if (email === "" && password === "") {
+                alert("Please fill all details")
+                return;
+            }
+            else if (email === "") {
+                alert("Please enter your email")
+                return;
+            }
+            else if (password === "") {
+                alert("Please enter your password")
+                return;
+            }
+
+            let users = JSON.parse(localStorage.getItem("users")) || []
+
+            let check = users.find(u => u.email === email && u.password === password)
+            if (check) {
+                alert("login succcesfully!")
+                window.location.href = "home.html"
+            }
+            else {
+                alert("Incorrect email and password")
+            }
+        })
+
+    </script> -->
+    
+
+    <!-- <script>
+        const form=document.getElementById("loginForm")
+
+        form.addEventListener("submit", function(even){
+            even.preventDefault();
+
+            let email=document.getElementById("email").value.trim();
+            let password=document.getElementById("password").value.trim();
+
+            if(email==="" && password===""){
+                alert("Please fill all details")
+                return;
+            }
+            else if(email===""){
+                alert("Please enter your email")
+                return;
+            }
+            else if(password===""){
+                alert("Please enter your password")
+                return;
+            }
+
+
+
+            let users=JSON.parse(localStorage.getItem("users")) || [];
+            let check=users.find(u=>u.email===email && u.password===password)
+
+            if(check){
+                alert("login succesfully!")
+                window.location.href="home.html"
+            }
+            else{
+                alert("Incorrect email and password")
+            }
+            
+        })
+    </script> -->
+
+
+
+
+
+    <script>
+
+        let form=document.getElementById("loginForm")
+        form.addEventListener("submit", (even)=>{
+            even.preventDefault();
+
+
+            let email=document.getElementById("email").value.trim()
+            let password=document.getElementById("password").value.trim()
+
+
+            if(email==="" && password===""){
+                alert("Please fill all details")
+            }
+            else if(email===""){
+                alert("please enter your email")
+            }
+            else if(password===""){
+                alert("please enter your password")
+            }
+
+
+            let users=JSON.parse(localStorage.getItem("users")) || [];
+            let check=localStorage.getItem(u=>u.email===email && u.password===password)
+
+            if(check){
+                alert("login succesfully.")
+                window.location.href="home.html"
+            }
+            else{
+                alert("Incorrect email and password")
+            }
+
+
+            
+
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>

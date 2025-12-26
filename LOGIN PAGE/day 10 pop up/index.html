@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1 id="container1" style="position: relative;">Hello World</h1>
+
+
+    <div id="container" style="display: none;" class="container2">
+        <div class="card">
+            <h1>login</h1>
+            <form action="" id="loginForm">
+                <div class="input-box">
+                    <input type="email" id="email" placeholder="Enter Your Email">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" placeholder="Enter Your Password">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="input-box">
+                    <button id="login" type="button">Login</button>
+                </div>
+                <p>I have new account <button id="signbtn" type="button">Sign up</button></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="container2" style="display: none;" class="container2">
+        <div class="card">
+            <h1>Sign Up</h1>
+            <form action="" id="loginForm">
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Enter Your Name">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" placeholder="Enter Your Email">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" placeholder="Enter Your Password">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="input-box">
+                    <button id="login" type="button">Sign Up</button>
+                </div>
+                <p>I have already register <button id="loginbtn" type="button">login</button></p>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+
+        let login = document.querySelector("#container")
+
+
+        function showlogin() {
+            setTimeout(() => {
+                container.style.display = "flex"
+                container.style.justifyContent = "center"
+                container.style.alignItems = "center"
+                container2.style.display="none"
+            }, 5000)
+        }
+
+        showlogin()
+
+        function showsign() {
+            setTimeout(() => {
+                container2.style.display = "flex"
+                container2.style.justifyContent = "center"
+                container2.style.alignItems = "center"
+                container.style.display="none"
+            },5000)
+        }
+
+        showsign()
+
+        document.getElementById("loginbtn").addEventListener("click", ()=>{
+            showlogin()=clearTimeout((showsign) => {
+                container.style.display="none"
+                container2.style.display="block"
+
+            });
+            
+        })
+
+        document.getElementById("signbtn").addEventListener("click", ()=>{
+            showsign()=clearTimeout((showlogin) => {
+                container.style.display="block"
+                container2.style.display="none"
+            });
+            
+        })
+
+
+
+        const form = document.getElementById("loginForm");
+
+        form.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            let name = document.getAnimations("name").value.trim()
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let login = document.getElementById("login").value.trim();
+            let loginbtn=document.getElementById("loginbtn").value.trim();
+            let signbtn=document.getElementById("signbtn").value.trim();
+
+            if (email === "" && password === "") {
+                alert("Please fill up to all details")
+                return;
+            }
+            else if (email === "") {
+                alert("Enter your email");
+                return;
+            }
+            else if (password === "") {
+                alert("Enter your password");
+                return;
+            }
+
+
+            if (name==="" &&  email=== "" && password === "") {
+                alert("Please fill up to all details")
+                return;
+            }
+            else if (name === "") {
+                alert("Enter your name");
+                return;
+            }
+            else if (email === "") {
+                alert("Enter your email");
+                return;
+            }
+            else if (password === "") {
+                alert("Enter your password");
+                return;
+            }
+
+            let users = JSON.parse(localStorage.getItem("users")) ||[]
+            let check = users.find(u => u.email === email && u.password === password)
+
+
+
+            if (check) {
+                alert("Login Succesfull!");
+                clearTimeout(showlogin)
+            }
+            else {
+                alert("Incorrect email and password")
+            }
+
+            users.push({
+                name: name,
+                email: email,
+                password: password
+            })
+
+            localStorage.setItem("users",JSON.stringify(users))
+
+            
+
+            let check1=users.find(u => u.email===email)
+
+            if(check1){
+                alert("You have already register! please login.")
+                showlogin()
+            }
+
+
+            loginbtn.addEventListener("click", ()=>{
+                showsign()
+            })
+            signbtn.addEventListener("click",()=>{
+                showlogin()
+            })
+
+
+
+            if(name===name && email===email && password===password){
+                clearTimeout(showlogin, showsign)
+            }
+            
+            
+        })
+
+    </script>
+</body>
+
+</html>

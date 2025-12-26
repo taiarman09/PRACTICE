@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Background */
+body {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Outer card */
+.photo-card {
+    border: 6px solid #1e90ff;  /* bright blue border */
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.photo-card img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+    margin: 0;
+}
+
+/* Outer container with border */
+.team-card {
+    border: 3px solid #007bff;
+    border-radius: 10px;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.team-card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Inner profile box */
+.profile {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Circular image */
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #4caf50;
+    object-fit: cover;
+}
+
+/* Name text */
+.profile h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Role text */
+.profile p {
+    color: #7a7a7a;
+    font-size: 16px;
+    margin: 0;
+}
+
+.profile p::before {
+    content: "</> ";
+    color: #6c63ff;
+}
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card */
+.profile-card {
+    background-color: #fff8dc;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Top section: name, role, image */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.profile-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #1e90ff;
+}
+
+.profile-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Social buttons */
+.social-links {
+    margin: 15px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 5px;
+    color: white;
+    background-color: #1e90ff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Bottom text */
+.profile-description {
+    font-size: 14px;
+    color: #555;
+}
+    </style>
+</head>
+<body>
+<p>
+<div class="photo-card">
+    <img src="https://th.bing.com/th/id/OIP.oj3Zxll2LSicliuNerV9iAHaLH?r=0&o=7rm=3&rs=1&pid=ImgDetMain" alt="Profile Photo">
+</div></p>
+<p>
+<div class="team-card">
+    <h2>Meet Our Team</h2>
+    <div class="profile">
+        <img src="https://i.pinimg.com/736x/f1/b4/f3/f1b4f35c609fd65e1012fe5c1e81ba9b.jpg" alt="Michael Brown">
+        <h3>Michael Brown</h3>
+        <p>Frontend Developer</p>
+    </div>
+</div></p>
+<p>
+<div class="profile-card">
+    <div class="profile-header">
+        <div class="profile-info">
+            <h3>Krish R</h3>
+            <p>Instructor</p>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.50fUbNrA_bSaajlssv5HIgHaJy?r=0&rs=1&pid=ImgDetMain" alt="Krish R">
+    </div>
+    
+    <div class="social-links">
+        <a href="#">f</a> <!-- Facebook -->
+        <a href="#">t</a> <!-- Twitter -->
+        <a href="#">in</a> <!-- LinkedIn -->
+    </div>
+    
+    <div class="profile-description">
+        Subscribe Easy Tutorials<br>
+        YouTube channel to watch more<br>
+        videos on Web design
+    </div>
+</div>
+</p>
+    
+</body>
+</html>

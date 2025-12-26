@@ -1,0 +1,107 @@
+.box{
+    border: 1px solid black ;
+    width: 1500px;
+    height: 1400px;
+    margin: auto;
+}
+
+.box1{
+    border: 1px solid black;
+    width: 1450px;
+    height: 100px;
+    margin: 20px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+  
+    
+}
+
+.box2{
+    border: 1px solid black;
+    width: 200px;
+    height: 1200px;
+    margin: 10px 20px;
+   
+
+}
+
+.box3{
+    border: 1px solid black ;
+    width: 1200px;
+    height: 1200px;
+    margin: 10px 250px;
+   
+}
+
+.box4{
+    border: 1px solid rgba(0, 0, 0, 0.648) ;
+    height: 0px;
+    width: 1150px;
+  
+}
+
+.font{
+    margin: 10px;
+     font-size: 30px;
+}
+
+.font1{
+    margin: 0px 20px;
+    font-size: 20px;
+    color: blue;
+}
+
+.font2{
+    margin: 0px 20px;
+    font-size: 20px;
+    float: right;
+    
+}
+
+.heading{
+    font-size: 30px;
+    margin: 10px 20px;
+}
+
+p::first-letter{
+    color: red;
+    font-size: 40px;
+    
+}
+
+.word{
+    font-size: 20px;
+    margin: 20px;
+
+}
+
+.image{
+    width: 300px;
+    height: 200px;
+}
+
+.word1{
+    display: block;
+    background-color: rgb(214, 222, 219);
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+.word2{
+    display: block;
+    background-color: rgb(81, 165, 243);
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+.word3{
+    display: block;
+    background-color: rgb(214, 222, 219);
+    font-size: 20px;
+    margin: 0px 20px;
+    color: red;
+}
+
+

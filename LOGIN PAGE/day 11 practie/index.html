@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>Sign Up</h1>
+
+            <form action="" id="loginForm">
+                <div class="input">
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="input">
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="input">
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="button">
+                    <button type="submit" id="signup">Sign Up</button>
+                </div>
+                <p>I have already register! <a href="login.html">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+        let form = document.getElementById("loginForm");
+
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let name=document.getElementById("name").value.trim();
+            let email=document.getElementById("email").value.trim();
+            let password=document.getElementById("password").value.trim()
+
+
+
+            if(name==="" && email==="" && password===""){
+                alert("Please fill all details");
+                return;
+            }
+            else if(name===""){
+                alert("Please enter your name");
+                return;
+            }
+            else if(email===""){
+                alert("Please enter your email");
+                return;
+            }
+            else if(password===""){
+                alert("Please enter your password");
+                return;
+            }
+            
+
+
+            let users=JSON.parse(localStorage.getItem("users")) || [];
+            let check=users.find(u=>u.email===email)
+
+            if(check){
+                alert("You have already registed login first");
+                window.location.href="login.html"
+            }
+            else{
+                alert("Sign up succesfully!")
+            window.location.href="home.html"
+            }
+
+            users.push({
+                name: name, 
+                email: email, 
+                password: password
+            })
+
+            localStorage.setItem("users",JSON.stringify(users))
+
+
+
+            
+        })
+
+
+    </script>
+
+
+
+</body>
+
+</html>

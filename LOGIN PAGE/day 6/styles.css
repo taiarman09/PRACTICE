@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-photo/scenic-view-mountains-lake_53876-138187.jpg?semt=ais_hybrid&w=740&q=80);
+    background-size: cover;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.card {
+    border: 2px solid black;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    padding: 0px 20px 0px 20px;
+}
+
+.input-box h2 {
+    text-align: center;
+    color: white;
+}
+
+.input-box input {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.input input{
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+}
+.input {
+    margin-top: 40px;
+    color: black;
+    position: relative;
+}
+
+.input label {
+    position: absolute;
+    left: 25px;
+    top: 25%;
+    transition: 0.7s;
+}
+
+.input i {
+    position: absolute;
+    left: 90%;
+    top: 28%;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -17px;
+    transition-duration: 0.7s;
+}
+
+input:focus~i,
+input:valid~i {
+    display: none;
+}
+
+
+.login {
+    color: black;
+    position: relative;
+}
+.login button{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+}
+
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.forgot .h4{
+    text-decoration: underline;
+}

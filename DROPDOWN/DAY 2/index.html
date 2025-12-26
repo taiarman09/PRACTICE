@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">LOGO</div>
+        <ul id="menuList">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+        <div class="menu-icon" onclick="togglemenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    
+
+
+    <script>
+        let menuList=document.getElementById("menuList")
+
+        
+        function togglemenu(){
+            
+            if(menuList.style.maxHeight=="0px"){
+                menuList.style.maxHeight="300px"
+            }
+            else{
+                menuList.style.maxHeight="0px"
+            }
+        }
+    </script>
+</body>
+</html>

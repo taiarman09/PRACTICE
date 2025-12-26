@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.header{
+    height: 100px;
+    width: 70%;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+}
+
+
+.header.scrolled{
+    background-color: white;
+    width: 100%;
+}
+.navbar-ul ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.image{
+    height: 500px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.logo-name{
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar-ul ul li{
+    font-size: 18px;
+}
+.navbar-ul ul li:hover{
+    text-decoration: underline;
+
+}
+
+.card-section{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.card-section p{
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-section h2{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.product-section{
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card{
+    border: 1px solid black;
+    height: 400px;
+    border-radius: 20px;
+    width: 300px;
+}
+.circle-card{
+    width: 80%;
+    height: 60%;
+    border: 1px solid black;
+    border-radius:50%;
+    margin: auto;
+    margin-top: 10px;
+
+    img{
+        border-radius: 50%;
+    }
+}
+.card-text{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 40%;
+}
+.card:hover{
+    transform: translateY(-20px);
+    transition-duration: 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card-text button{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    color: white;
+    background-color: green;
+    border-radius: 25px;
+}
+
+
+.background-color{
+    background-color: rgb(233, 236, 245);
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.background-color p{
+    width: 30%;
+    margin: auto;
+}
+
+
+.background-color p{
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.background-color h2{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card-section1{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: rgb(233, 236, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card1{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+}
+.h-50{
+    height: 50%;
+    width: 100%;
+    text-align: start;
+}
+.star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card1 h1{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.card1 p{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.card1-div{
+    color: rgba(0, 0, 0, 0.525);
+    margin-top: 10px;
+    margin-left: 10px;
+}

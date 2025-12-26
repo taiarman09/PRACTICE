@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.logo{
+    font-size: 30px;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    background-color: blue;
+    position: relative;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+
+@media(max-width:400px){
+    ul{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        transition: all 1s;
+    }
+    ul li{
+        padding: 20px;
+    }
+    .menu-icon{
+        display: block;
+        color: white;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const form = document.getElementById("loginForm");
+
+        form.addEventListener("submit",function (event){
+
+            let name=document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+
+
+            if(name ==="" || email ==="" || password===""){
+                alert("Please fill all details")
+                return;
+            }
+
+
+            let user = JSON.parse(localStorage.getItem("user")) || [];
+
+            let existingUser =user.find(u =>u.email ===email)
+
+
+            if(existingUser){
+                alert("This email is already register! Please login.");
+                window.location.href ="login.html";
+                return;
+            }
+
+            let newUser = {name,email,password};
+            user.push(newUser)
+
+            localStorage.setItem("user",JSON.stringify(user));
+
+            alert("Sign Up Successfull!");
+            window.location.href ="home.html";
+
+        })
+
+
+    </script>
+    
+</body>
+</html>

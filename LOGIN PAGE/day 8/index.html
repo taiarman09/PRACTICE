@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Sign Up</h1>
+
+            <form action="" id="loginForm">
+                <div class="position">
+                    <input type="text" id="text" placeholder="Enter Your Name">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="position">
+                    <input type="email" id="email" placeholder="Enter Your Email">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="position">
+                    <input type="password" id="password" placeholder="Enter Your Password">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="button"><button>Sign Up</button></div>
+                <p>I Have Already Registed <a href="login.html">login</a></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        const form = document.getElementById("loginForm");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+
+            let text = document.getElementById("text").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+
+            if(text==="" && email==="" && password===""){
+                alert("Please fill all fields")
+                return;
+            }
+            else if(text===""){
+                alert("Please fill Your Name")
+                return;
+            }
+            else if(email===""){
+                alert("Please fill Your Email")
+                return;
+            }
+            else if(password===""){
+                alert("Please fill Your Password")
+                return;
+            }
+
+            let users=JSON.parse(localStorage.getItem("users")) || [];
+
+            let check=users.find(u=>u.email===email)
+            if(check){
+                alert("I Have Already Registed! Please Login.")
+                window.location.href="login.html"
+                return;
+            }
+
+            users.push({
+                text: text,
+                email: email,
+                password: password
+            })
+
+            localStorage.setItem("users",JSON.stringify(users))
+
+            alert("Sign Up Succesfully!")
+            window.location.href="home.html"
+            return;
+        })
+
+
+    </script>
+
+
+
+</body>
+
+</html>

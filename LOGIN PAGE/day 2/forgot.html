@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forgot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="login">
+            <form action="" id="loginForm">
+                <h2>Find youe account</h2>
+                <p>Email address link to your acoount</p>
+                <div class="input-box" style="margin-top: 20px;">
+                    <input type="email" id="email" autocomplete="email" placeholder="Enter Your Email">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <!-- <div class="input-box" style="margin-top: 10px;">
+                    <input type="password" id="password" autocomplete="current-password"
+                        placeholder="Enter Your Password">
+                    <i class="fa-solid fa-key"></i>
+                </div> -->
+                <div class="button-reset-submit">
+                    <div><button type="submit" autocomplete="current-password">Send SMS</button></div>
+                </div>
+                <!-- <div class="text-forgot">
+                    <div class="text-forgot-1">Forgotten your login details? </div>
+                    <div class="text-forgot-2"><a href="forgot.html">Get help with loggin in.</a></div>
+                </div> -->
+                <div class="google-button">
+                    <!-- <div><button class="continue-google" type="button" id="" autocomplete="button"><img height="100%" width="20%" src="./image/google-removebg-preview.png" alt=""></button></div> -->
+                    <div><a class="create-new" href="login.html">Back</a></div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const form = document.getElementById("loginForm");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let email = document.getElementById("email").value.trim();
+            let users = JSON.parse(localStorage.getItem("users")) || [];
+
+            if (email === "") {
+                alert("Please Enter your email.");
+                return;
+            }
+
+            let userFound = users.find(user => user.email === email);
+
+            if (userFound) {
+                alert("Password reset link has been sent!");
+            }
+            else {
+                alert("This email is not registered!");
+            }
+        });
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

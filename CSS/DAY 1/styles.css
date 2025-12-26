@@ -1,0 +1,47 @@
+.align{
+text-align: center;
+font-size: 40px;
+color:firebrick;
+
+}
+
+.underline{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    color: firebrick;
+    
+}
+
+.word{
+    text-align: center;
+}
+
+.rubik-lines-regular {
+  font-family: "Rubik Lines", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bad-script-regular {
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.the-girl-next-door-regular {
+  font-family: "The Girl Next Door", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playwrite-in-guides-regular {
+  font-family: "Playwrite IN Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+

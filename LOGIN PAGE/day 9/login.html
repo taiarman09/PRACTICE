@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <h1>Login</h1>
+            <form action="" id="loginForm">
+                <div class="input">
+                    <input type="email" id="email" placeholder="Enter Your Name">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p id="error2"></p>
+                </div>
+                <div class="input">
+                    <input type="password" id="password" placeholder="Enter Your Name">
+                    <i class="fa-solid fa-key"></i>
+                    <p id="error3"></p>
+                </div>
+                <div class="input">
+                    <button type="submit">Login</button>
+                </div>
+                <p class="p">I have new account <a href="index.html">Sign Up</a></p>
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- <script>
+
+        const form = document.getElementById("loginForm");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+
+            if (email === "" && password === "") {
+                alert("Please Enter your full fill");
+                return;
+            }
+            else if (email === "") {
+                alert("Please Enter your email");
+                return;
+            }
+            else if (password === "") {
+                alert("Please Enter your password");
+                return;
+            }
+
+            let users=JSON.parse(localStorage.getItem("users")) || [];
+            let check = users.find(u => u.email === email && u.password===password)
+
+            if (check) {
+                alert("Login Succesfully.")
+                window.location.href = "home.html"
+                return;
+            }
+            else{
+                alert("Incorrect email and password")
+            }
+
+
+        })
+
+    </script> -->
+
+
+
+
+    <script>
+
+        let email = document.querySelector("#email");
+        let password = document.querySelector("#password")
+        let loginForm = document.querySelector("#loginForm")
+
+
+
+        
+
+        function emailshow() {
+            let error2 = document.querySelector("#error2")
+
+
+            if (email.value === "") {
+                error2.innerHTML = "Please enter your email"
+                error2.style.color = "red"
+                return false;
+
+            }
+
+            let users = JSON.parse(localStorage.getItem("users")) || []
+            let check = users.find(u => u.email === email.value  && u.password===password.value)
+
+
+
+            if (check) {
+                alert("Login succesfull.")
+                window.location.href = "home.html"
+                return false;
+            }
+            else{
+                alert("Incorrect email and password.")
+            }
+
+            error2.innerHTML = ""
+            return true;
+
+        }
+
+        function passwordshow() {
+            let error3 = document.querySelector("#error3")
+
+            if (password.value === "") {
+                error3.innerHTML = "Please enter your password"
+                error3.style.color = "red"
+                return false;
+
+            } else {
+                error3.innerHTML = ""
+                return true;
+
+            }
+
+        }
+
+
+        loginForm.addEventListener("submit", (e) => {
+            e.preventDefault()
+
+            let emailok = emailshow()
+            let passwordok = passwordshow()
+
+
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>
