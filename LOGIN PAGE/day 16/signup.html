@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>sign up</h1>
+        <form action="" id="loginForm">
+            <div class="input">
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="input">
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="input">
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="button">
+                <button type="submit">Sign Up</button>
+            </div>
+            <p><a href="index.html">login</a></p>
+        </form>
+    </div>
+
+
+
+    <script>
+        const form = document.getElementById("loginForm");
+        form.addEventListener("submit", function (e){
+            e.preventDefault();
+
+            let name=document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+
+
+            if (name==="" && email=== "" && password === "") {
+                alert("Please Enter Fill Details");
+                return;
+            }
+            else if (name === "") {
+                alert("Please Enter name");
+                return;
+            }
+            else if (email === "") {
+                alert("Please Enter email");
+                return;
+            }
+            else if (password === "") {
+                alert("Please Enter password");
+                return;
+            }
+
+            let users = JSON.parse(localStorage.getItem("users")) || []
+            let check = users.find(u => u.email === email);
+
+            if(check){
+                alert("You have already register! please login.");
+                window.location.href="index.html";
+                return;
+            }
+
+
+            users.push({
+                name: name,
+                email: email,
+                password: password
+            })
+            
+            localStorage.setItem("users", JSON.stringify(users));
+
+            alert("Sign Up Succesfully!")
+            window.location.href="home.html"
+        })
+    </script>
+</body>
+
+</html>

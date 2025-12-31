@@ -60,7 +60,7 @@ function start() {
     nextbtn.innerHTML = "Next"
     showQuestion();
 }
-
+    
 //  showfunction me reset function ko pahle call karaya
 
 function showQuestion() {
