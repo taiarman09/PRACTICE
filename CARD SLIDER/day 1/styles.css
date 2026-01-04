@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+.slider-wrapper {
+  width: 70%;
+  margin: 60px auto;
+  position: relative;
+}
+
+.slider-container {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 50px;   /* ✅ same gap everywhere */
+  transition: transform 0.5s ease;
+}
+
+.card {
+  min-width: 300px;
+  height: 200px;
+  background: white;
+  border-radius: 15px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+
+
+
+
+
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  border: none;
+  font-size: 22px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev { left: -50px; }
+.next { right: -50px; }
+
+/* dots */
+.dots {
+  margin-top: 20px;
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #bbb;
+  display: inline-block;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: black;
+}
+
+
+
+
+
+
+
+/* ====== UI ENHANCEMENTS ====== */
+
+/* smooth overall feel */
+* {
+  box-sizing: border-box;
+}
+
+/* slider shadow container */
+.slider-wrapper {
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  padding: 40px 20px;
+  gap: 20px;
+  border-radius: 30px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+/* cards */
+.card {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* center card highlight */
+.card.active {
+  opacity: 1;
+  /* transform: scale(1.15); */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* hover overlay */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(0,0,0,0.15),
+    rgba(0,0,0,0)
+  );
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+/* navigation buttons */
+.nav-btn {
+  /* background: linear-gradient(135deg, #000, #333);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); */
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  transform: translateY(-50%) scale(1.1);
+  background: linear-gradient(135deg, #111, #555);
+}
+
+/* dots UI */
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  transition: 0.3s;
+}
+
+.dot.active {
+  width: 30px;
+  border-radius: 20px;
+}
+
+/* subtle animation */
+.slider {
+  will-change: transform;
+}

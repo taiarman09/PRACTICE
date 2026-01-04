@@ -1,0 +1,66 @@
+{
+  "users": [],
+  "products": [],
+  "food": [
+    {
+      "id": 1,
+      "name": "McDonald's Burger",
+      "img": "https://b.zmtcdn.com/data/pictures/1/21544661/22cde0c65c7afa92557454cf692de99e_o2_featured_v2.jpg",
+      "category": "Fast Food"
+    },
+    {
+      "id": 2,
+      "name": "Burger King",
+      "img": "https://b.zmtcdn.com/data/pictures/0/21859530/6bee3be6c1c62416d7e6b18c94a306a3_o2_featured_v2.jpg",
+      "category": "Fast Food"
+    },
+    {
+      "id": 3,
+      "name": "Burger Farm",
+      "img": "https://b.zmtcdn.com/data/pictures/6/21962826/314f931997d771737c4c4f582163eb0c_o2_featured_v2.jpg",
+      "category": "Fast Food"
+    },
+    {
+      "id": 4,
+      "name": "The Poutinerie Burger",
+      "img": "https://b.zmtcdn.com/data/dish_photos/39d/50cdbf432dd0dd16fe60ef6c8a8e139d.jpeg",
+      "category": "Fast Food"
+    },
+    {
+      "id": 5,
+      "name": "Ajay's Burger",
+      "img": "https://b.zmtcdn.com/data/pictures/9/22126349/ccfd36a9a127425ed4f4874629bd13af_o2_featured_v2.jpg",
+      "category": "Fast Food"
+    },
+    {
+      "id": 6,
+      "name": "Al Baik Fast Food Burger",
+      "img": "https://b.zmtcdn.com/data/dish_photos/b48/2da429be6797dc29e4e68ebdf7f28b48.jpg",
+      "category": "Fast Food"
+    },
+    {
+      "id": 2,
+      "name": "Pizza",
+      "img": 250,
+      "category": "Fast Food"
+    },
+    {
+      "id": 3,
+      "name": "Pizza",
+      "img": 200,
+      "category": "Fast Food"
+    },
+    {
+      "id": 4,
+      "name": "Pizza",
+      "img": 300,
+      "category": "Fast Food"
+    },
+    {
+      "id": 5,
+      "name": "chciken",
+      "img": 300,
+      "category": "Fast Food"
+    }
+  ]
+}
