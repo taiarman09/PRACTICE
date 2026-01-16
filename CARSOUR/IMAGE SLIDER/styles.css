@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    border: 1px solid black;
+    height: 700px;
+    width: 90%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_jcLWhZrKRo9QrDVaaUZvgKkBUYAUAo30cw&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 5s infinite ease;
+}
+
+
+
+@keyframes change{
+    0%{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Tm7UL-1f9w-52li4HcCZqGMhBkkkO7pUUnR4p1Np&s);
+    }
+    -50%{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMaGnQynopH4phna4V8qDuLQ6zKEL9cpd62tDP8ukw&s);
+    }
+}

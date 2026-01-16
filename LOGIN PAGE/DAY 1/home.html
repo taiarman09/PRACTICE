@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Electronic Store</title>
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjVizEeHb6-uH5GsLxb31TKDzQ2VfAWNQGUuyG2WKw1isT-E_u">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="header-main">
+            <div class="logo-namecard">
+                <div class="logo-card"></div>
+                <div class="logo-name">tronmart</div>
+            </div>
+            <div class="position">
+                <input type="text" placeholder="Search Product...">
+                <div class="position-absolute"><i class="fa-solid fa-magnifying-glass"
+                        style="color: rgb(76, 145, 230);"></i></div>
+            </div>
+            
+                <!-- <button><i class="fa-solid fa-list" style="color: #ffffff;"></i></button> -->
+                <div class="dropdown1 menu">
+                    <button class="dropbtn1" onclick="toggleDropdown1()"><i class="fa-solid fa-list"
+                            style="color: #ffffff;"></i></button>
+                    <div class="dropdown-content1" id="dropdownmenu1">
+                        <a href="#">Home</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+        
+        </div>
+        <div class="line"></div>
+        <div class="ul">
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="toggleDropdown()">All products</button>
+                        <div class="dropdown-content" id="dropdownmenu">
+                            <a href="#">Home</a>
+                            <a href="#">Services</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </li>
+                <li>Home application</li>
+                <li>Audio & video</li>
+                <li>Refrigerator</li>
+                <li>New arrivals</li>
+                <li>Today's deal</li>
+                <li>Gift cards</li>
+                <li><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></li>
+                <li id="logout" onclick="toggle()">Log Out</li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+    <section>
+
+        <div class="position-relative">
+            <div class="image"><img height="100%" width="100%"
+                    src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-hero-image.jpg"
+                    alt=""></div>
+            <div class="card-main">
+                <div class="card">
+                    <h4>logoipsum*</h4>
+                    <h1>The best home entertainment system is here</h1>
+                    <h5>Sit diam odio eget rhoncus volutpat est nibh velit posuere egestas.</h5>
+                    <div><button>shop now</button></div>
+                </div>
+            </div>
+            <div class="card-80">
+                <div class="box">
+                    <div class="icone"><i class="fa-solid fa-truck fa-2xl" style="color: #005eff;"></i></div>
+                    <div class="text">
+                        <h5>Free shipping</h5>
+                        <h6>When you spend $80 or more</h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icone"><i class="fa-solid fa-message fa-2xl" style="color: #005eff;"></i></div>
+                    <div class="text">
+                        <h5>We are available 24/7</h5>
+                        <h6>Need help? contact us anytime</h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icone"><i class="fa-solid fa-arrows-rotate fa-2xl" style="color: #005eff;"></i></div>
+                    <div class="text">
+                        <h5>Satisfied or return</h5>
+                        <h6>Easy 30-day return policy</h6>
+                    </div>
+                </div>
+                <div class="box box1">
+                    <div class="icone"><i class="fa-regular fa-address-card fa-2xl" style="color: #005eff;"></i></div>
+                    <div class="text">
+                        <h5>100% secure payments</h5>
+                        <h6>Visa, Mastercard, Stripe, PayPal</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="box-products">
+            <h1>Shop by Category</h1>
+
+            <div class="products">
+                <div class="products-card">
+                    <img height="100%" width="100%"
+                        src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-06.jpg"
+                        alt="">
+                    <div class="position-1">
+                        <h4>AIR CONDITIONER</h4>
+                        <h5>4 PRODUCTS</h5>
+                    </div>
+                </div>
+                <div class="products-card">
+                    <img height="100%" width="100%"
+                        src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-08.jpg"
+                        alt="">
+                    <div class="position-1">
+                        <h4>AUDIO & VIDEO</h4>
+                        <h5>5 PRODUCTS</h5>
+                    </div>
+                </div>
+                <div class="products-card">
+                    <img height="100%" width="100%"
+                        src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-02.jpg"
+                        alt="">
+                    <div class="position-1">
+                        <h4>GADGETS</h4>
+                        <h5>6 PRODUCTS</h5>
+                    </div>
+                </div>
+                <div class="products-card">
+                    <img height="100%" width="100%"
+                        src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-07.jpg"
+                        alt="">
+                    <div class="position-1">
+                        <h4>HOME APPLIANCES</h4>
+                        <h5>5 PRODUCTS</h5>
+                    </div>
+                </div>
+                <div class="products-card">
+                    <img height="100%" width="100%"
+                        src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-05.jpg"
+                        alt="">
+                    <div class="position-1">
+                        <h4>KITCHEN APPLIANCES</h4>
+                        <h5>6 PRODUCTS</h5>
+                    </div>
+                </div>
+                <div class="products-card">
+                    <img height="100%" width="100%"
+                        src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-03.jpg"
+                        alt="">
+                    <div class="position-1">
+                        <h4>PCS & LAPTOP</h4>
+                        <h5>4 PRODUCTS</h5>
+                    </div>
+                </div>
+                <div class="products-card">
+                    <img height="100%" width="100%"
+                        src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-04.jpg"
+                        alt="">
+                    <div class="position-1">
+                        <h4>REFRIGERATOR</h4>
+                        <h5>4 PRODUCTS</h5>
+                    </div>
+                </div>
+                <div class="products-card">
+                    <img height="100%" width="100%"
+                        src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-category-image-01.jpg"
+                        alt="">
+                    <div class="position-1">
+                        <h4>SMART HOME</h4>
+                        <h5>5 PRODUCTS</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="images-two">
+            <div class="card-image">
+                <img height="100%" width="100%"
+                    src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC-WqXd0IOchjuyrOvtdBCyg9hygbQ5Di6YAKp0IYm3eRhElS9"
+                    alt="">
+                <div class="position-2">
+                    <h1>The only case you need.</h1>
+                    <div class="line-1"></div>
+                    <div class="button"><a href="">Shop Now</a></div>
+                </div>
+            </div>
+            <div class="card-image">
+                <img height="100%" width="100%"
+                    src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvnVt909B-1Rj1haVrIGPlCp7XjgzxJksosk2bkJBRSDsCWpM3"
+                    alt="">
+                <div class="position-2">
+                    <h1>Get 30% OFF</h1>
+                    <div class="line-1"></div>
+                    <div class="button"><a href="">Shop Now</a></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="box-products">
+
+
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; padding-left: 20px; padding-right: 20px;">
+                <h1>Today’s best deal</h1>
+                <a href="" style="text-decoration: none; color: blue;margin-top: 20px;">See More</a>
+            </div>
+
+            <div class="products-card-main">
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-27-400x400.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Multigroomer All-in-One Trimmer Series 5000, 23 Piece Mens Grooming Kit</p>
+                        <div class="price">
+                            <div class="price-1">$49.00</div>
+                            <div class="price-2">$44.00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-28-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Smart Speaker with Alexa Voice Control Built-in Compact Size with Incredible Sound for Any
+                            Room</p>
+                        <div class="price">
+                            <div class="price-1">$249.00</div>
+                            <div class="price-2">$219.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-2-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Home Speaker 500: Smart Bluetooth Speaker with Alexa Voice Control Built-In, White</p>
+                        <div class="price">
+                            <div class="price-1">$229.00</div>
+                            <div class="price-2">$209.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-21-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Note 10 Pro 128GB 6GB RAM Factory Unlocked (GSM ONLY) International Model</p>
+                        <div class="price">
+                            <div class="price-1">$699.00</div>
+                            <div class="price-2">$659.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-22-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>5G Unlocked Smartphone,12GB RAM+256GB Storage120Hz Fluid Display Hasselblad Quad Camera 65W
+                            Ultra Fast Charge 50W Wireless Charge</p>
+                        <div class="price">
+                            <div class="price-1">$1,299.00</div>
+                            <div class="price-2">$1,199.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-36-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>5G Factory Unlocked Android Cell Phone 128GB Pro-Grade Camera 30X Space Zoom Night Mode,
+                            Space Grey</p>
+                        <div class="price">
+                            <div class="price-1">$1,099.00</div>
+                            <div class="price-2">$999.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-18-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>13 Ultrabook Gaming Laptop: Intel Core i7-1165G7 4 Core, NVIDIA GeForce GTX 1650 Ti Max-Q,
+                            13.3″ 1080p 120Hz, 16GB RAM, 512GB SSD, CNC Aluminum, Chroma RGB, Thunderbolt</p>
+                        <div class="price">
+                            <div class="price-1">$1,499.00</div>
+                            <div class="price-2">$1,399.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-19-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>15.6″ FHD Display Laptop – Intel i7 – Intel HD Graphics 6000 , Webcam, WiFi, Bluetooth, HDMI,
+                            Windows 11,Grey</p>
+                        <div class="price">
+                            <div class="price-1">$1,029.00</div>
+                            <div class="price-2">$999.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="card3">
+            <div class="div" style="background-color: rgb(220, 228, 230);">
+                <div class="position-3">
+                    <h2>Wireless headphones</h2>
+                    <p>Starting at $49</p>
+                    <a href="">Shop now</a>
+                </div>
+                <img src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-wireless-headphone.png"
+                    alt="">
+            </div>
+            <div class="div" style="background-color: rgb(220, 228, 230);">
+                <div class="position-3">
+                    <h2>Grooming</h2>
+                    <p>Starting at $49</p>
+                    <a href="">Shop now</a>
+                </div>
+                <img src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-grooming.png"
+                    alt="">
+            </div>
+            <div class="div" style="background-color: rgb(247, 236, 208);">
+                <div class="position-3">
+                    <h2>Video games</h2>
+                    <p>Starting at $49</p>
+                    <a href="">Shop now</a>
+                </div>
+                <img src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-video-games.png"
+                    alt="">
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="box-products">
+
+
+            <div class="title-box">
+                <h1>Audio & Video​</h1>
+                <a href="" style="text-decoration: none; color: blue;margin-top: 20px;">See More</a>
+            </div>
+
+            <div class="products-card-main">
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-40-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Max SR Home Theater Surround Sound Bar HDMI, Optical Cables, Wireless Subwoofer & Two
+                            Speakers</p>
+                        <div class="price">
+                            <div class="price-1"></div>
+                            <div class="price-2">$629.00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-41-300x300.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>V-Series 5.1 Home Theater Sound Bar with Dolby Audio, Bluetooth, Wireless Subwoofer, Voice
+                            Assistant Compatible</p>
+                        <div class="price">
+                            <div class="price-1">$799.00</div>
+                            <div class="price-2">$749.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-39-300x300.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>OLED C1 Series 55” 4k Smart TV (3840 x 2160), 120Hz Refresh Rate, AI-Powered 4K, Dolby
+                            Cinema, WiSA Ready, Gaming Mode</p>
+                        <div class="price">
+                            <div class="price-1"></div>
+                            <div class="price-2">$1,249.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-38-300x300.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>X80J 55 Inch TV: 4K Ultra HD LED Smart Google TV with Dolby Vision HDR</p>
+                        <div class="price">
+                            <div class="price-1">$1,449.00</div>
+                            <div class="price-2">$1,329.00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="box-products">
+            <div class="title-box">
+                <h1>Home appliances​</h1>
+                <a href="" style="text-decoration: none; color: blue;margin-top: 20px;">See More</a>
+            </div>
+
+            <div class="products-card-main">
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-27-400x400.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Multigroomer All-in-One Trimmer Series 5000, 23 Piece Mens Grooming Kit</p>
+                        <div class="price">
+                            <div class="price-1">$49.00</div>
+                            <div class="price-2">$44.00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-12-300x300.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Compact Pulsator Washer for Clothes, .9 Cubic ft. Tub, White, BPAB10WH</p>
+                        <div class="price">
+                            <div class="price-1">$319.00</div>
+                            <div class="price-2">$259.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-13-300x300.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Full-Automatic Compact Washer with Wheels, 1.6 cu. ft, 11 lbs capacity with 6 Wash Programs
+                            Washer</p>
+                        <div class="price">
+                            <div class="price-1">$309.00</div>
+                            <div class="price-2">$279.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-14-300x300.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Small Space Heat Pump Dryer with Sensor Dry, 12 Preset Machine Cycles, 40 Minute Express
+                            Drying</p>
+                        <div class="price">
+                            <div class="price-1"></div>
+                            <div class="price-2">$349.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="box-products">
+            <div class="title-box">
+                <h1>Air conditioner​</h1>
+                <a href="" style="text-decoration: none; color: blue;margin-top: 20px;">See More</a>
+            </div>
+
+            <div class="products-card-main">
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-9-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Air Conditioner 5000 BTU, Efficient Cooling for Smaller Areas Like Bedrooms and Guest Rooms
+                        </p>
+                        <div class="price">
+                            <div class="price-1">$159.00</div>
+                            <div class="price-2">$139.00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-10-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Dual Hose Portable Air Conditioner, Dehumidifier, Fan with Activated Carbon Filter in
+                            Platinum</p>
+                        <div class="price">
+                            <div class="price-1"></div>
+                            <div class="price-2">$149.00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-11-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Star 9,500 BTU 115V Dual Inverter Window Air Conditioner with Wi-Fi Control</p>
+                        <div class="price">
+                            <div class="price-1"></div>
+                            <div class="price-2">$199.00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-16-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>BTU 115V Window-Mounted Air Conditioner with Remote Control White</p>
+                        <div class="price">
+                            <div class="price-1"></div>
+                            <div class="price-2">$179.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="image">
+            <img height="100%" width="100%"
+                src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-promotional-banner-fwidth-1.jpg"
+                alt="">
+        </div>
+
+
+
+
+        <div class="box-products">
+            <div class="title-box">
+                <h1>Kitchen appliances​</h1>
+                <a href="" style="text-decoration: none; color: blue;margin-top: 20px;">See More</a>
+            </div>
+
+            <div class="products-card-main">
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-4-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>0.9 Cubic Feet Capacity 900 Watts Kitchen Essentials for the Countertop Stainless Steel</p>
+                        <div class="price">
+                            <div class="price-1">$599.00</div>
+                            <div class="price-2">$559.00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-3-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Microwave Oven with Smart Sensor Easy Clean Interior ECO Mode 1.2 Cu Ft Stainless Steel</p>
+                        <div class="price">
+                            <div class="price-1">$529.00</div>
+                            <div class="price-2">$509.00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-8-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>Double Door Mini Fridge with Freezer for Office or Dorm with Adjustable Remove Glass Shelves</p>
+                        <div class="price">
+                            <div class="price-1"></div>
+                            <div class="price-2">$479.00</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card-product-main">
+                    <div class="card-60">
+                        <img height="100%" width="100%"
+                            src="https://websitedemos.net/electronic-store-04/wp-content/uploads/sites/1055/2022/03/electronic-store-product-image-6-600x600.jpg"
+                            alt="">
+                        <button>Sale!</button>
+
+                    </div>
+                    <div class="card-40">
+                        <div><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i><i class="fa-regular fa-star" style="color: #ffbb00;"></i><i
+                                class="fa-regular fa-star" style="color: #ffbb00;"></i><i class="fa-regular fa-star"
+                                style="color: #ffbb00;"></i></div>
+                        <p>36″ Side-by-Side Refrigerator and Freezer with 25 Cubic Ft. Total Capacity, Black</p>
+                        <div class="price">
+                            <div class="price-1">$799.00</div>
+                            <div class="price-2">$749.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+<script>
+        function toggleDropdown() {
+            document.getElementById("dropdownmenu").classList.toggle("show")
+        }
+
+        function toggleDropdown1(){
+            document.getElementById("dropdownmenu1").classList.toggle("show1")
+        }
+
+        let logout=document.getElementById("logout").value.trim();
+
+        function toggle(){
+            window.location.href="login.html"
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="form-box">
+            <h2>Add Employee Details</h2>
+
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter Employee Name">
+
+            <label>Department</label>
+            <select id="dept">
+                <option>Select Department</option>
+                <option>HR</option>
+                <option>IT</option>
+                <option>Finance</option>
+                <option>Sales</option>
+                <option>Marketing</option>
+            </select>
+
+            <label>Salary</label>
+            <input type="number" id="salary" placeholder="Enter Salary">
+
+            <label>Bank Name</label>
+            <select id="bank">
+                <option>Select Bank</option>
+                <option>State Bank of India (SBI)</option>
+                <option>HDFC Bank</option>
+                <option>ICICI Bank</option>
+                <option>Axis Bank</option>
+                <option>Punjab National Bank (PNB)</option>
+                <option>Bank of Baroda</option>
+                <option>Kotak Mahindra Bank</option>
+                <option>Canara Bank</option>
+                <option>Union Bank of India</option>
+            </select>
+
+
+            <label>Account Number</label>
+            <input type="text" id="account" placeholder="Enter Account Number">
+
+            <label>IFSC Code</label>
+            <input type="text" id="ifsc" placeholder="Enter IFSC Code">
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter Email">
+
+            <button id="submitBtn">Add Employee</button>
+        </div>
+
+        <div class="table-box">
+            <h2>Employee Records</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Dept</th>
+                        <th>Salary</th>
+                        <th>Bank</th>
+                        <th>Account</th>
+                        <th>IFSC</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTable"></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft Employee CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Microsoft Employee Management</h1>
+
+        <!-- Employee Form -->
+        <div class="card">
+            <h2>Add / Update Employee</h2>
+            <form id="employeeForm">
+                <div class="form-group">
+                    <label>Employee GRID <span style="color: red;">*</span></label>
+                    <input type="text" id="empId" placeholder="Enter Employee GRID">
+                </div>
+
+                <div class="form-group">
+                    <label>Employee Name <span style="color: red;">*</span></label>
+                    <input type="text" id="empName" placeholder="Enter Employee Name">
+                </div>
+
+                <div class="form-group">
+                    <label>Department <span style="color: red;">*</span></label>
+                    <input type="text" id="empInput" placeholder="Enter Department">
+                    <select name="" id="empSelect">
+                        <option value="">-- Select Department --</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                        <option value="AI / Machine Learning">AI / Machine Learning</option>
+                        <option value="Testing">Testing</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="empEmail" placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                    <label>Mobile Number <span style="color: red;">*</span></label>
+                    <input type="tel" id="empNumber" placeholder="Enter Number">
+                </div>
+
+                <button type="submit" id="addbtn" class="btn-primary">Add Employe</button>
+            </form>
+        </div>
+
+        <!-- Employee Table -->
+        <div class="card">
+            <h2>Employee List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                        <th>Mobile Number</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTable">
+                    <!-- JS se data yaha add hoga -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

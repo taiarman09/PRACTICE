@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    
+    <div class="card">
+        <button onclick="toggltmenu()">check balance</button>
+        <div id="amount"></div>
+    </div>
+
+    <div class="card">
+        <input type="number" id="userAmount" placeholder="Enter amount">
+        <button onclick="toggleadd()">add money</button>
+        <div id="add"></div>
+    </div>
+
+    <div class="card">
+        <input type="number" id="sendAmount" placeholder="Send amount">
+        <button onclick="togglesend()">send money</button>
+        <div id="send"></div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
